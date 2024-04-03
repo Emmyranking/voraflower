@@ -1,0 +1,66 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick='functieArray()' class='galleryButons'>Category 1</button>
+  <div id='pozeGallery'> </div>
+  <script>
+ function functieArray() {
+    var gallery = document.getElementById("pozeGallery");
+    for (i = 0; i < imgArray.length; i++) {
+        gallery.appendChild(imgArray[i]);
+    }
+};
+var imgArray = new Array();
+imgArray[0] = new Image();
+imgArray[0].src = 'Rectangle 122.png';
+
+imgArray[1] = new Image();
+imgArray[1].src = 'Rectangle 122.png';
+
+imgArray[2] = new Image();
+imgArray[2].src = 'Rectangle 122.png';
+
+imgArray[3] = new Image();
+imgArray[3].src = 'Rectangle 122.png';
+
+imgArray[4] = new Image();
+imgArray[4].src = 'Rectangle 122.png';
+  </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="functieArray()">view category</button>
+<div id="pozeGallery"></div>
+
+<script>
+  function functieArray(){
+    const gallery = document.getElementById("pozeGallery");
+    for(i=0;i<imgArray.length; i++){
+      gallery.appendChild(imgArray[i]);
+      console.log("here")
+    }
+  };
+
+  const imgArray = new Array();
+
+  imgArray[0] = new Image();
+  imgArray[0].src = `Rectangle 122.png`;
+
+  imgArray[1] = new Image();
+  imgArray[1].src = `Rectangle 122.png`;
+</script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <div class="flex justify-between items-center w-[min(100% - 9vw,1128px)] p-[36px 0 32px] max-w-screen-xl mx-auto">
+            <div class="">
+                <h2 class="text-[#161414] text-[24px] font-[700]">Voral.<span class="text-[#0B850B]">flowers</span> </h2>
+            </div>
+
+           <div class="sm:hidden md:hidden lg:block">
+            <div class="flex items-center gap-[8px] bg-[#D6D6D6] h-[54px] p-[10px] rounded-[8px] cursor-pointer">
+                <img src="./ic_round-search.png">
+                <input type="text" id="search" placeholder="search" class="bg-transparent caret-[#161414] border-none outline-none text-[16px] font-[400]">
+            </div>
+           </div>
+
+            <div>
+                <ul class="flex gap-[20px] items-center " id="navMenu">
+                    <li><a href="#" class="text-[16px] font-[400] capitalize">product</a> </li>
+                    <li><a href="#" class="text-[16px] font-[400] capitalize">services</a> </li>
+                    <li><a href="#" class="text-[16px] font-[400] capitalize">about us</a> </li>
+
+                    <button class="bg-[#0B850B] h-[54px] w-[144px] rounded-[8px] text-[#ffff] text-[16px] font-[700] capitalize">contact us</button>
+                </ul>
+            </div>
+
+            <div  class="hidden md:block"  id="hamburger">
+                <span class="w-[25px] h-[3px] bg-[#161414] block m-[5px]" id="bar"></span>
+                <span class="w-[25px] h-[3px] bg-[#161414] block m-[5px]" id="bar"></span>
+                <span class="w-[25px] h-[3px] bg-[#161414] block m-[5px]" id="bar"></span>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="flex flex-col items-center justify-center h-[330px]">
+       <div class="mt-[20px] mb-[20px] max-w-screen-xl mx-auto lg:hidden mt-[20px] mb-[20px] lg:hidden sm:block md:block">
+        <div class="flex items-center gap-[8px] bg-[#D6D6D6] h-[54px] p-[10px] rounded-[8px] cursor-pointer w-full ">
+            <img src="./ic_round-search.png ">
+            <input type="text" id="search" placeholder="search" class="bg-transparent caret-[#161414] border-none outline-none text-[16px] font-[400] w-full">
+        </div>
+       </div>
+        <h2 class="text-[47px] font-[700] text-[#161414] leading-[56.09px] font-[averia liber]">The best <span class="text-[#0B850B]">Flowers</span> store in Africa</h2>
+        <p class="text-[16px] font-[400] leading-[21.82px] text-[#161414] text-center font-[nunito sans] w-[29%] my-[30px]">The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout.</p>
+
+        <div class="flex items-center gap-[8px]">
+            <button class="bg-[#0B850B] h-[54px] w-[144px] rounded-[8px] text-[#ffff] text-[16px] font-[700] capitalize">contact us</button>
+            <img src="./Frame 76.png">
+        </div>
+    </div>
+    
+
+    <div class="w-full bg-[white] h-[80px] translate-y-[80%] rounded-b-[60%]"></div>
+    <div class="flex items-center justify-center">
+        <div class="flex w-full overflow-x-scroll snap-x" id="gallery">
+            <div class="w-full grid grid-cols-3 gap-20 p-10 flex-none">
+                <span><img src="./Rectangle 120.png"> </span>
+                <span><img src="./Rectangle 122.png"> </span>
+                <span><img src="./Rectangle 120.png"> </span>
+                <!-- <span><img src="./Rectangle 124.png"> </span> -->
+            </div>
+    
+            <div class="w-full grid grid-cols-3 gap-20 p-10 flex-none">
+                <span><img src="./Rectangle 120.png"> </span>
+                <span><img src="./Rectangle 122.png"> </span>
+                <span><img src="./Rectangle 120.png"> </span>
+                <!-- <span><img src="./Rectangle 124.png"> </span> -->
+            </div>
+        </div>
+    </div>
+    <div class="w-full bg-[white] h-[70px] translate-y-[-90%] rounded-t-[60%]"></div>
+
+
+
+
+
+    <script src="./sandbox.js"></script>
+</body>
+</html>
